@@ -1,28 +1,41 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Oxalis FAQS Search</title>
-  </head>
-  <body>
- 
-    <div class="w-[600px] mt-[60px] mx-auto">
-      <gen-search-widget
-      configId="c90331b0-ebee-4630-ba9c-3167969e2d80"
-      triggerId="searchWidgetTrigger">
-      </gen-search-widget>
-     
-<input class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 " placeholder="Search FAQS..."  id="searchWidgetTrigger" />
-    </div>
-           
-    
 
-          
-        
-    <!-- Widget JavaScript bundle -->
-    <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_US"></script>
-    <script type="module" src="/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oxalis FAQS Search</title>
+</head>
+<style>
+  .faqs-search {
+    display: block;
+    width: 400px;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 8px;
+    background-color: aliceblue;
+    border: 1px solid #d3d3d9;
+  }
+
+  .faqs-search:focus {
+    outline: none;
+    border: 2px solid rgb(31, 127, 42);
+  }
+</style>
+
+<body>
+
+  <div class="w-[600px] mt-[60px] mx-auto">
+    <gen-search-widget configId="c90331b0-ebee-4630-ba9c-3167969e2d80" triggerId="searchWidgetTrigger">
+    </gen-search-widget>
+
+    <input class="faqs-search" placeholder="Search FAQS..." id="searchWidgetTrigger" />
+  </div>
+
+  <!-- Widget JavaScript bundle -->
+  <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_US"></script>
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>
