@@ -22,15 +22,27 @@
     outline: none;
     border: 2px solid rgb(31, 127, 42);
   }
+  .container {
+    width: 100vw;
+    padding-top: 100px;
+
+  }
+  .wrapper{
+    width: 500px;
+    margin: 0 auto;
+    
+  }
 </style>
 
 <body>
 
-  <div class="w-[600px] mt-[60px] mx-auto">
-    <gen-search-widget configId="c90331b0-ebee-4630-ba9c-3167969e2d80" triggerId="searchWidgetTrigger">
-    </gen-search-widget>
-
-    <input class="faqs-search" placeholder="Search FAQS..." id="searchWidgetTrigger" />
+  <div class="container">
+    <div class="wrapper">
+      <gen-search-widget configId="c90331b0-ebee-4630-ba9c-3167969e2d80" triggerId="searchWidgetTrigger">
+      </gen-search-widget>
+  
+      <input class="faqs-search" placeholder="Search FAQS..." id="searchWidgetTrigger" />
+    </div>
   </div>
 
   <!-- Widget JavaScript bundle -->
